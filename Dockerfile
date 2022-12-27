@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8080
-ADD groceryapp/target/groceryapp.jar groceryapp.jar
+ADD target/groceryapp.jar groceryapp.jar
 ENTRYPOINT [ "java", "-jar", "/groceryapp.jar" ]
